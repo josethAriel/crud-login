@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario.css">
+    <title>Registro de Usuarios</title>
+    <script src="captura.js"></script>
+</head>
+<body>
+    <a href="index.html"><img src="img/salida.png" alt="sali"></a>
+    <h1>Formulario de Registro</h1>
+    <form action="registro.php" method="POST" onsubmit="return captura();">
+        <h2>CREAR UNA CUENTA</h2>
+        <div class="contenedor-form">
+            <input type="text" placeholder="Nombre" class="nombre" required name="nombre" id="nombre">
+            <input type="text" placeholder="Apellido" class="apellido" required name="apellido" id="apellido">
+            <input type="email" placeholder="Email" class="email" required name="email" id="email">
+            <input type="text" placeholder="Usuario" class="user" required name="user" id="user">
+            <input type="text" placeholder="Telefono" class="telf" required name="telf" id="telf">
+            <input type="password" placeholder="Contraseña" class="pass" required name="password" id="pass">
+            <input type="submit" class="btn-enviar" value="Registrar">
+            <p>¿Ya tienes una cuenta?
+                <a href="index.html">Ingresa Aqui</a>
+            </p>
+        </div>
+    </form>
+    
+</body>
+</html>
